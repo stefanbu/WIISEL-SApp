@@ -22,15 +22,15 @@ Thanks to a wireless system and several sensors embedded into the insole, the da
 Partners envolved in the development:
  
 
-Fundació Privada CETEMMSA (CETEMMSA), Spain
-- the Coordinator -
-Universitat Autònoma de Barcelona (UAB), Spain
-Istituto Nazionale di Riposo e Cura per Anziani INRCA (INRCA), Italy
-The Foundation for Medical Research Infrastructural Development and Health Services next to the Medical Center TEL AVIV (TASMC), Israel
-Spring Techno GMBH & CO. KG (SPRING TECHNO), Germany
-Tejidos Indesmallables GEISA, S.L. (GEISA), Spain
-National University of Ireland, GALWAY (NUI Galway), Ireland
-ACREO AB, Sweden
+- Fundació Privada CETEMMSA (CETEMMSA), Spain
+- Universitat Autònoma de Barcelona (UAB), Spain
+- Istituto Nazionale di Riposo e Cura per Anziani INRCA (INRCA), Italy
+- The Foundation for Medical Research Infrastructural Development and Health Services next to the Medical Center TEL AVIV (TASMC), Israel
+- Spring Techno GMBH & CO. KG (SPRING TECHNO), Germany
+- Tejidos Indesmallables GEISA, S.L. (GEISA), Spain
+- National University of Ireland, GALWAY (NUI Galway), Ireland
+- ACREO AB, Sweden
+
 and with the participation of Instituto de Biomecánica de Valencia (IBV), Technical Research Centre for Dependency Care and Autonomous Living (CetPD-UPC), Centro Nacional de Microelectrónica (IMB – CNM, CSIC) . 
 
 The project was finished in April 2015.
