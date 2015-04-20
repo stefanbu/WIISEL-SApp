@@ -19,7 +19,7 @@ The WIISEL tool consists of a combination of a flexible software platform togeth
 
 Thanks to a wireless system and several sensors embedded into the insole, the data captured by the movement of the foot are sent first to a mobile device and later to a server, so that the evolution of a patient can be monitored remotely in terms of gait, fall risk, activity and mobility.
 
-Partners envolved in the development:
+Partners involved in the development:
  
 
 - Fundació Privada CETEMMSA (CETEMMSA), Spain
@@ -32,16 +32,16 @@ Partners envolved in the development:
 - ACREO AB, Sweden
 
 
-The project was finished in April 2015.
+The project finished in April 2015.
 A video with more details can be found here:
 https://youtu.be/mhZadYQ8rH4
 
-The code in this repository contains the complete souce code for project's included smart phone (Android OS, Nexus 4).
+The code in this repository contains the complete souce code for the smart phone (Android OS, Nexus 4).
 The app can be used on most smart phones with Android 4.4 and higher, with only slightly changes.
 
 Hardware requirements:
-- >8GB RAM
-- Blue Tooth Low Energy protocol
+- >8GB Storage
+- BlueTooth Low Energy protocol
 - 3 axis - acceleration and gyroscope sensors
 
 Contact for the mobile app:
