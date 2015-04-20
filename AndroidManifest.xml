@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.wiisel"
+    android:versionCode="2"
+    android:versionName="1.0" >
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="com.android.wiisel.application.WiiselApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.android.wiisel.activity.AcLogin"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.wiisel.activity.AcMainScreen"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.android.wiisel.activity.AcSettings"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.android.wiisel.activity.AcDetails"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.android.wiisel.activity.Dialog"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+
+        <service android:name="com.android.wiisel.service.ConnectionService" >
+        </service>
+
+        <receiver android:name="com.android.wiisel.receivers.SelectDeviceReceiver" >
+            <intent-filter>
+                <action android:name="android.bluetooth.devicepicker.action.DEVICE_SELECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.wiisel.receivers.DataReceiveFromCallbackFirst"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.android.wiisel.service.right.ACTION_DATA_NOTIFY" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.wiisel.receivers.AlarmReceiver" >
+        </receiver>
+        <receiver
+            android:name="com.android.wiisel.receivers.DataReceiveFromCallbackSecond"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.android.wiisel.service.left.ACTION_DATA_NOTIFY" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.wiisel.receivers.StatusInternetConectionBroatcast" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.wiisel.receivers.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.android.wiisel.service.UIService" >
+        </service>
+        <service android:name="com.android.wiisel.service.AccelerometerService" >
+        </service>
+        <service android:name="com.android.wiisel.service.BluetoothLeServiceRight" >
+        </service>
+        <service android:name="com.android.wiisel.service.BluetoothLeServiceLeft" >
+        </service>
+        <service android:name="com.android.wiisel.service.BluetoothLeBatteryServiceLeft" >
+        </service>
+    </application>
+
+</manifest>
