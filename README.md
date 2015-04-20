@@ -31,7 +31,6 @@ Partners envolved in the development:
 - National University of Ireland, GALWAY (NUI Galway), Ireland
 - ACREO AB, Sweden
 
-and with the participation of Instituto de Biomecánica de Valencia (IBV), Technical Research Centre for Dependency Care and Autonomous Living (CetPD-UPC), Centro Nacional de Microelectrónica (IMB – CNM, CSIC) . 
 
 The project was finished in April 2015.
 A video with more details can be found here:
